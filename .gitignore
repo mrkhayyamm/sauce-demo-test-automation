@@ -1,0 +1,56 @@
+# Python cache
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+
+venv/
+env/
+.venv/
+
+# Environment variables
+
+.env
+.env.*
+
+# Pytest
+
+.pytest_cache/
+coverage/
+htmlcov/
+
+# Logs
+
+*.log
+
+# Selenium (opsiyonel: driver'ları local tutuyorsan)
+
+chromedriver
+geckodriver
+
+# VS Code
+
+.vscode/
+
+# JetBrains IDE
+
+.idea/
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Build / packaging
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Temporary files
+
+*.tmp
+*.temp
