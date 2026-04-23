@@ -1,11 +1,27 @@
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
-@pytest.fixture (scope="session") #bu testimizin kapanmadan devam etmesini sağlar
+@pytest.fixture(scope="function")
 def driver():
-    driver = webdriver.Chrome() #guncel selenıumlarda boyle kısa şekilde yazmak yeterlidir
-    driver.get("https://www.saucedemo.com/") #test edeceğimiz sitenin linki
-    driver.maximize_window() #site açıldıktan sonra tam ekran yapar
+    options = Options()
+    options.add_argument("--incognito")  # Gizli modda aç
+    
+    driver = webdriver.Chrome(options=options)
+    driver.get("https://www.saucedemo.com/")
+    driver.maximize_window()
 
     yield driver
-    driver.quit() # ram tasarrufu için kapatmak şart
+    driver.quit()
+
+
+
+
+
+
+ 
+
+
+
+
+    
