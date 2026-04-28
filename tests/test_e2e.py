@@ -8,7 +8,7 @@ password="secret_sauce"
 firstname="Khayyam"
 lastname="Khalil"
 zipcode="34000"
-
+#test deneme
 
 class TestEnd2End:
     def test_e2e_shopping_workflow(self,driver):
