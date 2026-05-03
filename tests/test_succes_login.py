@@ -1,8 +1,5 @@
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
 from pages.login_page import LoginPage
+from pages.inventory_page import InventoryPage
 
 #information
 username="standard_user"
@@ -11,70 +8,55 @@ firstname="Khayyam"
 lastname="Khalilov"
 zipcode="34000"
 
+
 #1.Login
 def test_success_login(driver):
-        
-        wait=WebDriverWait(driver,10)
         login_page=LoginPage(driver)
         login_page.login(username,password)
-
-        inventory=wait.until(ec.visibility_of_element_located((By.CLASS_NAME,"inventory_list")))
-        assert inventory.is_displayed(),"Inventory page did not load after login"
+        inventory_page=InventoryPage(driver)
+        inventorylist= inventory_page.inventory_list()
+        assert inventorylist.is_displayed(),"Inventory page did not load after login"
         assert "inventory" in driver.current_url
 
 def test_add_product_to_cart(driver):
-        wait=WebDriverWait(driver,10)
-        login_page=LoginPage(driver).login(username,password)
-        wait.until(ec.element_to_be_clickable((By.ID,"add-to-cart-sauce-labs-fleece-jacket"))).click()
-        badge=wait.until(ec.visibility_of_element_located((By.CLASS_NAME,"shopping_cart_badge")))
-        
-        assert badge.text =="1" , f'Expected cart count to be 1, but got {badge.text}'
+        login_page=LoginPage(driver)
+        login_page.login(username,password)
+        inventory_page=InventoryPage(driver)
+        inventory_page.add_product_to_cart("sauce-labs-fleece-jacket")
+        cart_count=inventory_page.get_cart_badge_count()
+        assert cart_count=="1" , f'Expected cart count to be 1, but got {cart_count}'
 
 def test_remove_product_from_cart(driver):
-        wait=WebDriverWait(driver,10)
-        login_page=LoginPage(driver).login(username,password)
-
-
-
-        wait.until(ec.element_to_be_clickable((By.ID,"add-to-cart-sauce-labs-fleece-jacket"))).click()
-        remove_btn=wait.until(ec.element_to_be_clickable((By.ID,"remove-sauce-labs-fleece-jacket")))
-        remove_btn.click()
-        # badge=wait.until(ec.visibility_of_element_located((By.CLASS_NAME,"shopping_cart_link")))
-        # assert badge.text =="" , f'Expected cart count to be 1, but got {badge.text}'
-        badges = driver.find_elements(By.CLASS_NAME, "shopping_cart_badge")
-        assert len(badges) == 0, "Cart badge should not be visible after removing product"
+        login_page=LoginPage(driver)
+        login_page.login(username,password)
+        inventory_page=InventoryPage(driver)
+        inventory_page.add_product_to_cart("sauce-labs-fleece-jacket")
+        inventory_page.remove_product_btn("sauce-labs-fleece-jacket")
+        assert inventory_page.is_cart_empty()
 
 def test_reset_cart(driver):
-        wait=WebDriverWait(driver,10)
-        login_page=LoginPage(driver).login(username,password)
+        login_page=LoginPage(driver)
+        login_page.login(username,password)
+        inventory_page=InventoryPage(driver)
+        inventory_page.add_product_to_cart("sauce-labs-fleece-jacket")
+        inventory_page.open_menu()
+        inventory_page.click_reset()
+        inventory_page.wait_until_cart_empty()
+        assert inventory_page.is_cart_empty()
 
-
-      
-
-        wait.until(ec.element_to_be_clickable((By.ID,"add-to-cart-sauce-labs-fleece-jacket"))).click()
-        wait.until(ec.element_to_be_clickable((By.ID,"react-burger-menu-btn"))).click()
-        wait.until(ec.element_to_be_clickable((By.ID,"reset_sidebar_link"))).click()
-        wait.until(ec.invisibility_of_element_located((By.CLASS_NAME, "shopping_cart_badge")))
-        badges = driver.find_elements(By.CLASS_NAME, "shopping_cart_badge")
-        assert len(badges) == 0, "Cart should be empty after reset"
 
 
 def test_checkout_without_zip(driver):
-        wait=WebDriverWait(driver,10)
-
-        login_page=LoginPage(driver).login(username,password)
-
-
-        
-
-        wait.until(ec.element_to_be_clickable((By.ID,"add-to-cart-sauce-labs-fleece-jacket"))).click()
-        wait.until(ec.element_to_be_clickable((By.CLASS_NAME,"shopping_cart_link"))).click()
-        wait.until(ec.element_to_be_clickable((By.ID,"checkout"))).click()
-        wait.until(ec.visibility_of_element_located((By.ID,"first-name"))).send_keys(firstname)
-        wait.until(ec.visibility_of_element_located((By.ID,"last-name"))).send_keys(lastname)
-        wait.until(ec.element_to_be_clickable((By.ID,"continue"))).click()
-        error_msg=wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"h3[data-test='error']")))
-        assert "Error: Postal Code is required" in error_msg.text
+        login_page=LoginPage(driver)
+        login_page.login(username,password)
+        inventory_page=InventoryPage(driver)
+        inventory_page.add_product_to_cart("sauce-labs-fleece-jacket")
+        inventory_page.shopping_cart_button()
+        inventory_page.checkout_button()
+        inventory_page.fill_checkout_info(firstname,lastname)
+        inventory_page.click_continue()
+        error_msg=inventory_page.get_error_message()
+        assert "Error: Postal Code is required" in error_msg
         
 
 
