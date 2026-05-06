@@ -1,62 +1,86 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from pages.base_page import BasePage
 
-class InventoryPage:
-    def __init__(self,driver):
-        self.driver=driver
-        self.wait=WebDriverWait(driver,10)
-    
+class InventoryPage(BasePage):
+    INVENTORY_LIST=(By.CLASS_NAME,"inventory_list")
+    CART_BADGE=(By.CLASS_NAME,"shopping_cart_badge")
+    MENU_BTN=(By.ID,"react-burger-menu-btn")
+    RESET_BTN=(By.ID,"reset_sidebar_link")
+    CART_BTN=(By.CLASS_NAME,"shopping_cart_link")
+    # CHECKOUT_BTN=(By.ID,"checkout")
+    # FİRST_NAME=(By.ID,"first-name")
+    # LAST_NAME=(By.ID, "last-name")
+    # ZIP_CODE=(By.ID,"postal-code")
+    # CONTINUE=(By.ID,"continue")
+    # ERROR_MSG=(By.CSS_SELECTOR, "h3[data-test='error']")
+    FINISH=(By.ID,"finish")
+    ORDER_MSG=(By.CLASS_NAME,"complete-header")
+
+
+    def __init__(self, driver):
+        super().__init__(driver)
+
+
+    def go_to_cart(self):
+        self.click(self.CART_BTN)
+
     def inventory_list(self):
-       return self.wait.until(EC.visibility_of_element_located((By.CLASS_NAME,"inventory_list")))
+        return self.driver.find_elements(*self.INVENTORY_LIST)
+    
+    def is_inventory_loaded(self):
+       return self.is_visible(self.INVENTORY_LIST)
 
     def add_product_to_cart(self,product_id):
-        add_button_id= f'add-to-cart-{product_id}'
-        self.wait.until(EC.element_to_be_clickable((By.ID,add_button_id))).click()
+        locator= (By.ID, f"add-to-cart-{product_id}")
+        self.click(locator)
     
-
-    def get_cart_badge_count(self):
-        badge=self.wait.until(EC.visibility_of_element_located((By.CLASS_NAME,"shopping_cart_badge")))
-        return badge.text
+    #KOD HATA VERIRSE AÇ BUNU
+    # def get_cart_badge_count(self):
+    #     return self.get_text(self.CART_BADGE)
     
-    def remove_product_btn(self,product_id):
-        remove_btn_id=f'remove-{product_id}'
-        remove_btn=self.wait.until(EC.element_to_be_clickable((By.ID,remove_btn_id)))
-        remove_btn.click()
-
+    # def remove_product_btn(self,product_id):
+    #     locator = (By.ID, f"remove-{product_id}")
+    #     self.click(locator)
+    
     def open_menu(self):
-        burger_menu=self.wait.until(EC.element_to_be_clickable((By.ID,"react-burger-menu-btn")))
-        burger_menu.click()
+        self.click(self.MENU_BTN)
 
     def click_reset(self):
-           reset_side_bar=self.wait.until(EC.element_to_be_clickable((By.ID,"reset_sidebar_link")))
-           reset_side_bar.click()
+           self.click(self.RESET_BTN)
 
     def shopping_cart_button(self):
-        shoping_cart=self.wait.until(EC.element_to_be_clickable((By.CLASS_NAME,"shopping_cart_link")))
-        shoping_cart.click()
+        self.click(self.CART_BTN)
 
-    def checkout_button(self):
-        checkout= self.wait.until(EC.element_to_be_clickable((By.ID,"checkout")))
-        checkout.click()
-    def fill_checkout_info(self,firstname,lastname):
-        self.wait.until(EC.visibility_of_element_located((By.ID,"first-name"))).send_keys(firstname)
-        self.wait.until(EC.visibility_of_element_located((By.ID, "last-name"))).send_keys(lastname)
+    # def checkout_button(self):
+    #     self.click(self.CHECKOUT_BTN)
 
-    def click_continue(self):
-           self.wait.until(EC.element_to_be_clickable((By.ID,"continue"))).click()
+#hata verırse ac
+    # def fill_checkout_info(self,firstname,lastname):
 
-    def get_error_message(self):
-        return self.wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR,"h3[data-test='error']"))).text
-    
-    # def is_cart_empty(self):
-    #     badges = self.driver.find_elements(By.CLASS_NAME, "shopping_cart_badge")
-    #     return len(badges) == 0
+    #     self.type(self.FİRST_NAME,firstname)
+    #     self.type(self.LAST_NAME,lastname)
+
+        # self.type(self.ZIP_CODE,zipcode)
+
+    # def click_continue(self):
+    #        self.click(self.CONTINUE)
+
+    # def get_error_message(self):
+   
+    #     return self.get_text(self.ERROR_MSG)
     
     def wait_until_cart_empty(self):
-        self.wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "shopping_cart_badge")))
+        self.wait_invisible(self.CART_BADGE)
 
     
     def is_cart_empty(self):
-        badges = self.driver.find_elements(By.CLASS_NAME, "shopping_cart_badge")
+        badges = self.driver.find_elements(*self.CART_BADGE)
         return len(badges) == 0
+
+    def click_finish(self):
+        self.click(self.FINISH)
+    
+    def get_order_message(self):
+        return self.get_text(self.ORDER_MSG)

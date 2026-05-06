@@ -1,6 +1,10 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from pages.login_page import LoginPage
+from pages.inventory_page import InventoryPage
+username = "standard_user"
+password = "secret_sauce"
 
 @pytest.fixture(scope="function")
 def driver():
@@ -14,6 +18,13 @@ def driver():
     yield driver
     driver.quit()
 
+
+@pytest.fixture()
+def logged_in_inventory(driver):
+    login_page=LoginPage(driver)
+    login_page.login(username,password)
+    inventory_page=InventoryPage(driver)
+    return inventory_page
 
 
 
