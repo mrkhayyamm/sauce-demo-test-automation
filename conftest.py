@@ -1,5 +1,8 @@
 import pytest
+import os
+import base64
 from datetime import datetime
+from pytest_html import extras
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from pages.login_page import LoginPage
@@ -28,6 +31,7 @@ def logged_in_inventory(driver):
     return inventory_page
 
 
+
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
 
@@ -39,17 +43,31 @@ def pytest_runtest_makereport(item, call):
         driver = item.funcargs.get("driver")
 
         if driver:
+
+            screenshots_dir = "screenshots"
+            os.makedirs(screenshots_dir, exist_ok=True)
+
             timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-            screenshot_name = f"screenshots/{item.name}_{timestamp}.png"
 
-            driver.save_screenshot(screenshot_name)
+            screenshot_file = f"{item.name}_{timestamp}.png"
+
+            screenshot_path = os.path.join(screenshots_dir, screenshot_file)
+
+            driver.save_screenshot(screenshot_path)
+
+            with open(screenshot_path, "rb") as image_file:
+                encoded_image = base64.b64encode(image_file.read()).decode()
+
+            extra = getattr(report, "extra", [])
+
+            extra.append(
+                extras.html(
+                    f'<div><img src="data:image/png;base64,{encoded_image}" '
+                    f'style="width:600px;height:auto;border:1px solid #ccc;";" '
+                    f'onclick="window.open(this.src)" align="right"/></div>'
+                )
+            )
+
+            report.extra = extra
 
 
-
-
- 
-
-
-
-
-    
