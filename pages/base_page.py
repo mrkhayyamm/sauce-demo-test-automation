@@ -25,14 +25,8 @@ class BasePage:
     def is_visible(self,locator):
        return  self.wait.until(EC.visibility_of_element_located(locator)).is_displayed()
     
-    # def is_visible(self,locator):
-    #     try:
-    #         self.find(locator).is_displayed
-    #     except:
-    #         False
 
     def is_present(self,locator):
         return len(self.driver.find_elements(*locator))>0
     
-    def send_keys(self,locator,text):
-        self.wait.until(EC.visibility_of_element_located(locator)).send_keys(text)
+  
