@@ -1,4 +1,5 @@
 import pytest
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from pages.login_page import LoginPage
@@ -26,6 +27,22 @@ def logged_in_inventory(driver):
     inventory_page=InventoryPage(driver)
     return inventory_page
 
+
+@pytest.hookimpl(hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+
+    outcome = yield
+    report = outcome.get_result()
+
+    if report.when == "call" and report.failed:
+
+        driver = item.funcargs.get("driver")
+
+        if driver:
+            timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+            screenshot_name = f"screenshots/{item.name}_{timestamp}.png"
+
+            driver.save_screenshot(screenshot_name)
 
 
 

@@ -62,6 +62,7 @@ def test_remove_product_from_cart(logged_in_inventory):
         cart=CartPage(inventory.driver)
         cart.remove_product_btn("sauce-labs-fleece-jacket")
         assert cart.is_cart_empty()
+        
 
 
 
