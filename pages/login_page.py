@@ -1,20 +1,24 @@
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from pages.base_page import BasePage
+from selenium.webdriver.common.by import By
+
+
 class LoginPage(BasePage):
 
     USERNAME=(By.ID,"user-name")
     PASSWORD=(By.ID,"password")
-    LOGİN_BTN=(By.ID,"login-button")
+    LOGIN_BTN=(By.ID,"login-button")
+    ERROR_MSG=(By.CSS_SELECTOR, "h3[data-test='error']")
 
     def __init__(self, driver):
-        self.driver = driver
-        self.wait=WebDriverWait(driver,10)
+        super().__init__(driver)
+        
 
     def login(self, username, password):
         self.type(self.USERNAME,username)
         self.type(self.PASSWORD,password)
-        self.click(self.LOGİN_BTN)
+        self.click(self.LOGIN_BTN)
+    
+    def get_error_message(self):
+        return self.get_text(self.ERROR_MSG)
 
        
