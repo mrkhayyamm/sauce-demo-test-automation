@@ -23,6 +23,7 @@ def test_invalid_login(driver,username,password,error):
         login=LoginPage(driver)
         login.login(username,password)
         assert error in login.get_error_message()
+        # assert False
         
 
 @pytest.mark.parametrize(
@@ -49,6 +50,7 @@ def test_add_product_to_cart(logged_in_inventory):
         cart=CartPage(inventory.driver)
         cart_count= cart.get_cart_badge_count()
         assert cart_count == "1", f'Expected cart count to be 1, but got {cart_count}'
+       
 
 
 
