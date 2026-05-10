@@ -11,6 +11,8 @@ import pytest
     read_checkout_data()
 )
 
+@pytest.mark.checkout
+@pytest.mark.regression
 def test_checkout_without_zip(logged_in_inventory, test_data):
 
     inventory = logged_in_inventory
