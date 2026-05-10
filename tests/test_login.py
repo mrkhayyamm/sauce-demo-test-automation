@@ -6,6 +6,7 @@ from utils.constants import *
 @pytest.mark.regression
 @pytest.mark.login
 @pytest.mark.negative
+@pytest.mark.all
 @pytest.mark.parametrize(
         "test_data",
         read_login_test_data()
@@ -31,6 +32,7 @@ def test_invalid_login(driver,test_data):
 )
 @pytest.mark.smoke
 @pytest.mark.login
+@pytest.mark.all
 def test_successfull_login(driver,test_data):
         login=LoginPage(driver)
         login.login(

@@ -7,6 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
+from config.config import *
 username = "standard_user"
 password = "secret_sauce"
 
@@ -14,9 +15,19 @@ password = "secret_sauce"
 def driver():
     options = Options()
     options.add_argument("--incognito")  # Gizli modda aç
+
+    if HEADLESS:
+        options.add_argument("--headless=new")
+
+
+    if BROWSER =="chrome":
+
+        driver = webdriver.Chrome(options=options)
+    else:
+            raise ValueError("Unsupported browser")
     
-    driver = webdriver.Chrome(options=options)
-    driver.get("https://www.saucedemo.com/")
+
+    driver.get(BASE_URL)
     driver.maximize_window()
 
     yield driver

@@ -4,6 +4,8 @@ from utils.constants import *
 
 @pytest.mark.cart
 @pytest.mark.regression
+@pytest.mark.all
+
 def test_add_product_to_cart(logged_in_inventory):
  
 
@@ -15,6 +17,7 @@ def test_add_product_to_cart(logged_in_inventory):
 
 @pytest.mark.cart
 @pytest.mark.regression
+@pytest.mark.all
 def test_remove_product_from_cart(logged_in_inventory):
        
 
@@ -27,6 +30,7 @@ def test_remove_product_from_cart(logged_in_inventory):
         
 @pytest.mark.cart
 @pytest.mark.regression
+@pytest.mark.all
 def test_reset_cart(logged_in_inventory):
         inventory=logged_in_inventory
         inventory.add_product_to_cart(PRODUCT_JACKET)
