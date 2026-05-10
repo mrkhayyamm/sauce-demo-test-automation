@@ -1,6 +1,7 @@
 import pytest
 from pages.cart_page import CartPage
 from data.test_data import *
+from utils.constants import *
 
 @pytest.mark.cart
 def test_add_product_to_cart(logged_in_inventory):
