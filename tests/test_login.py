@@ -2,11 +2,10 @@ import pytest
 from pages.login_page import LoginPage
 from utils.data_reader import *
 from utils.constants import *
-#PAZARTESİ İÇİN NOT
-#SORUNLAR TAM ÇÖZÜLMEDİĞİ İÇİN GİT PUSH YAPILMADI
-#LOGIN VE CHECKOUT SAYFALARI SORUNLU NAME FIRSTANME NASIL KULLANILMALI ONU HALL ETMEK LAZIM
 
+@pytest.mark.regression
 @pytest.mark.login
+@pytest.mark.negative
 @pytest.mark.parametrize(
         "test_data",
         read_login_test_data()
@@ -30,8 +29,8 @@ def test_invalid_login(driver,test_data):
         read_login_test_valid_data()
 
 )
+@pytest.mark.smoke
 @pytest.mark.login
-@pytest.mark.deneme
 def test_successfull_login(driver,test_data):
         login=LoginPage(driver)
         login.login(

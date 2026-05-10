@@ -1,9 +1,9 @@
 import pytest
 from pages.cart_page import CartPage
-from data.test_data import *
 from utils.constants import *
 
 @pytest.mark.cart
+@pytest.mark.regression
 def test_add_product_to_cart(logged_in_inventory):
  
 
@@ -14,6 +14,7 @@ def test_add_product_to_cart(logged_in_inventory):
         assert cart_count == "1", f'Expected cart count to be 1, but got {cart_count}'
 
 @pytest.mark.cart
+@pytest.mark.regression
 def test_remove_product_from_cart(logged_in_inventory):
        
 
@@ -25,6 +26,7 @@ def test_remove_product_from_cart(logged_in_inventory):
         assert cart.is_cart_empty()
         
 @pytest.mark.cart
+@pytest.mark.regression
 def test_reset_cart(logged_in_inventory):
         inventory=logged_in_inventory
         inventory.add_product_to_cart(PRODUCT_JACKET)
