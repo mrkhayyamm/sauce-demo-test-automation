@@ -3,6 +3,8 @@ from pages.login_page import LoginPage
 from utils.data_reader import *
 from utils.constants import *
 
+#YENI BRANCH ACACAKSIN KONUSU: Parallel Test Execution (pytest-xdist)
+
 @pytest.mark.regression
 @pytest.mark.login
 @pytest.mark.negative

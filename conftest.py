@@ -8,6 +8,9 @@ from selenium.webdriver.chrome.options import Options
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from config.config import *
+import time
+import uuid
+timestamp = int(time.time())
 username = "standard_user"
 password = "secret_sauce"
 
@@ -60,7 +63,7 @@ def pytest_runtest_makereport(item, call):
 
             timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
-            screenshot_file = f"{item.name}_{timestamp}.png"
+            screenshot_file = f"{uuid.uuid4()}.png"
 
             screenshot_path = os.path.join(screenshots_dir, screenshot_file)
 
