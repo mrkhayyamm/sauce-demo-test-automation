@@ -4,13 +4,15 @@ from pages.cart_page import CartPage
 from pages.checkout_page import CheckOutPage
 from utils.data_reader import read_checkout_data
 import pytest
+import allure
 
 
 @pytest.mark.parametrize(
     "test_data",
     read_checkout_data()
 )
-
+@allure.parent_suite("SauceDemo")
+@allure.suite("Checkout Tests")
 @pytest.mark.checkout
 @pytest.mark.regression
 @pytest.mark.all

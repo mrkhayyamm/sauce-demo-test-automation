@@ -10,6 +10,8 @@ from pages.inventory_page import InventoryPage
 from config.config import *
 import time
 import uuid
+import allure
+from allure_commons.types import AttachmentType
 timestamp = int(time.time())
 username = "standard_user"
 password = "secret_sauce"
@@ -58,17 +60,16 @@ def pytest_runtest_makereport(item, call):
 
         if driver:
 
+            # SCREENSHOTS FOLDER
             screenshots_dir = "screenshots"
             os.makedirs(screenshots_dir, exist_ok=True)
 
-            timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-
             screenshot_file = f"{uuid.uuid4()}.png"
-
             screenshot_path = os.path.join(screenshots_dir, screenshot_file)
 
             driver.save_screenshot(screenshot_path)
 
+            # PYTEST-HTML SCREENSHOT
             with open(screenshot_path, "rb") as image_file:
                 encoded_image = base64.b64encode(image_file.read()).decode()
 
@@ -77,11 +78,29 @@ def pytest_runtest_makereport(item, call):
             extra.append(
                 extras.html(
                     f'<div><img src="data:image/png;base64,{encoded_image}" '
-                    f'style="width:600px;height:auto;border:1px solid #ccc;";" '
+                    f'style="width:600px;height:auto;border:1px solid #ccc;" '
                     f'onclick="window.open(this.src)" align="right"/></div>'
                 )
             )
 
             report.extra = extra
+
+            # ALLURE SCREENSHOT
+            allure.attach(
+                driver.get_screenshot_as_png(),
+                name="failure_screenshot",
+                attachment_type=AttachmentType.PNG
+            )
+
+            # ALLURE LOG ATTACHMENT
+            if os.path.exists("logs/test.log"):
+
+                with open("logs/test.log", "r") as log_file:
+
+                    allure.attach(
+                        log_file.read(),
+                        name="test_log",
+                        attachment_type=AttachmentType.TEXT
+                    )
 
 

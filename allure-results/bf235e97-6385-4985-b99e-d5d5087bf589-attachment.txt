@@ -1,0 +1,3 @@
+2026-05-12 10:32:14,194 | INFO | saucedemo | Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:32:14,320 | INFO | saucedemo | Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:32:14,395 | INFO | saucedemo | Clicking element: ('id', 'login-button')

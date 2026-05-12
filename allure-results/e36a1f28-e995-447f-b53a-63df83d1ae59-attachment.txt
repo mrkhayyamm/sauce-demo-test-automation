@@ -1,0 +1,7 @@
+[32mINFO    [0m saucedemo:test_login.py:32 Starting invalid login test
+[32mINFO    [0m saucedemo:test_login.py:34 trying login with username: standard_user
+[32mINFO    [0m saucedemo:base_page.py:17 Typing 'standard_user' into element: ('id', 'user-name')
+[32mINFO    [0m saucedemo:base_page.py:17 Typing '' into element: ('id', 'password')
+[32mINFO    [0m saucedemo:base_page.py:13 Clicking element: ('id', 'login-button')
+[32mINFO    [0m saucedemo:base_page.py:21 Getting  text from element : ('css selector', "h3[data-test='error']")
+[32mINFO    [0m saucedemo:test_login.py:48 Invalid login test passed

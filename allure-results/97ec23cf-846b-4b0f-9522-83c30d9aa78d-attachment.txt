@@ -1,0 +1,6 @@
+2026-05-12 10:31:38,030 | INFO | saucedemo | Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:31:38,190 | INFO | saucedemo | Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:31:38,267 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:31:38,374 | INFO | saucedemo | Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 10:31:38,455 | INFO | saucedemo | Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 10:31:38,520 | INFO | saucedemo | Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
