@@ -1,0 +1,5 @@
+[32mINFO    [0m saucedemo:base_page.py:17 Typing 'standard_user' into element: ('id', 'user-name')
+[32mINFO    [0m saucedemo:base_page.py:17 Typing 'secret_sauce' into element: ('id', 'password')
+[32mINFO    [0m saucedemo:base_page.py:13 Clicking element: ('id', 'login-button')
+[32mINFO    [0m saucedemo:base_page.py:13 Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+[32mINFO    [0m saucedemo:base_page.py:21 Getting  text from element : ('class name', 'shopping_cart_badge')

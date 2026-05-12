@@ -1,0 +1,7 @@
+2026-05-12 10:32:00,354 | INFO | saucedemo | Starting invalid login test
+2026-05-12 10:32:00,355 | INFO | saucedemo | trying login with username: wrong_user
+2026-05-12 10:32:00,355 | INFO | saucedemo | Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-12 10:32:00,481 | INFO | saucedemo | Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-12 10:32:00,557 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:32:00,647 | INFO | saucedemo | Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 10:32:00,676 | INFO | saucedemo | Invalid login test passed

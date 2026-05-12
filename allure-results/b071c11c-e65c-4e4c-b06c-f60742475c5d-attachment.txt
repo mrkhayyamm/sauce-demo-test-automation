@@ -1,0 +1,652 @@
+2026-05-11 10:37:38,715 - INFO - Starting invalid login test
+2026-05-11 10:37:38,716 - INFO - trying login with username: wrong_user
+2026-05-11 10:37:38,939 - INFO - error message validated succesfully
+2026-05-11 10:37:42,884 - INFO - Starting invalid login test
+2026-05-11 10:37:42,884 - INFO - trying login with username: 
+2026-05-11 10:37:43,103 - INFO - error message validated succesfully
+2026-05-11 10:37:47,084 - INFO - Starting invalid login test
+2026-05-11 10:37:47,084 - INFO - trying login with username: standard_user
+2026-05-11 10:37:47,320 - INFO - error message validated succesfully
+2026-05-11 10:56:09,141 - INFO - Starting invalid login test
+2026-05-11 10:56:09,142 - INFO - trying login with username: wrong_user
+2026-05-11 10:56:09,142 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-11 10:56:09,225 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-11 10:56:09,282 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 10:56:09,356 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 10:56:09,383 - INFO - error message validated succesfully
+2026-05-11 10:56:13,309 - INFO - Starting invalid login test
+2026-05-11 10:56:13,309 - INFO - trying login with username: 
+2026-05-11 10:56:13,309 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-11 10:56:13,379 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 10:56:13,438 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 10:56:13,512 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 10:56:13,536 - INFO - error message validated succesfully
+2026-05-11 10:56:17,483 - INFO - Starting invalid login test
+2026-05-11 10:56:17,483 - INFO - trying login with username: standard_user
+2026-05-11 10:56:17,483 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 10:56:17,558 - INFO - Typing '' into element: ('id', 'password')
+2026-05-11 10:56:17,598 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 10:56:17,668 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 10:56:17,697 - INFO - error message validated succesfully
+2026-05-11 10:56:21,652 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 10:56:21,734 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 10:56:21,786 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:12:02,419 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:12:02,510 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:12:02,558 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:12:02,662 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 11:12:02,731 - INFO - Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-11 11:12:06,705 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:12:06,786 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:12:06,838 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:12:06,928 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 11:12:06,999 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 11:12:07,057 - INFO - Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-11 11:12:11,037 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:12:11,116 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:12:11,165 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:12:11,272 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 11:12:11,372 - INFO - Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-11 11:12:11,430 - INFO - Clicking element: ('id', 'reset_sidebar_link')
+2026-05-11 11:12:16,078 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:12:16,187 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:12:16,256 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:12:16,393 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 11:12:16,484 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 11:12:16,562 - INFO - Clicking element: ('id', 'checkout')
+2026-05-11 11:12:16,632 - INFO - Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-11 11:12:16,698 - INFO - Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-11 11:12:16,765 - INFO - Clicking element: ('id', 'continue')
+2026-05-11 11:12:16,838 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 11:12:20,820 - INFO - Starting invalid login test
+2026-05-11 11:12:20,820 - INFO - trying login with username: wrong_user
+2026-05-11 11:12:20,820 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-11 11:12:20,889 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-11 11:12:20,941 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:12:21,015 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 11:12:21,038 - INFO - Invalid login test passed
+2026-05-11 11:12:25,000 - INFO - Starting invalid login test
+2026-05-11 11:12:25,001 - INFO - trying login with username: 
+2026-05-11 11:12:25,001 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-11 11:12:25,058 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:12:25,107 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:12:25,182 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 11:12:25,210 - INFO - Invalid login test passed
+2026-05-11 11:12:29,087 - INFO - Starting invalid login test
+2026-05-11 11:12:29,088 - INFO - trying login with username: standard_user
+2026-05-11 11:12:29,088 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:12:29,166 - INFO - Typing '' into element: ('id', 'password')
+2026-05-11 11:12:29,228 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:12:29,315 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 11:12:29,341 - INFO - Invalid login test passed
+2026-05-11 11:12:33,316 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:12:33,394 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:12:33,446 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:18:13,676 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:18:13,763 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:18:13,832 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:18:13,943 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 11:18:14,019 - INFO - Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-11 11:18:18,203 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:18:18,295 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:18:18,347 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:18:18,447 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 11:18:18,519 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 11:18:18,587 - INFO - Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-11 11:18:22,510 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:18:22,605 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:18:22,661 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:18:22,757 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 11:18:22,833 - INFO - Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-11 11:18:22,885 - INFO - Clicking element: ('id', 'reset_sidebar_link')
+2026-05-11 11:18:27,361 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:18:27,440 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:18:27,494 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:18:27,590 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 11:18:27,672 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 11:18:27,742 - INFO - Clicking element: ('id', 'checkout')
+2026-05-11 11:18:27,820 - INFO - Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-11 11:18:27,874 - INFO - Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-11 11:18:27,923 - INFO - Clicking element: ('id', 'continue')
+2026-05-11 11:18:27,981 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 11:18:31,856 - INFO - Starting invalid login test
+2026-05-11 11:18:31,857 - INFO - trying login with username: wrong_user
+2026-05-11 11:18:31,857 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-11 11:18:31,934 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-11 11:18:31,996 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:18:32,080 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 11:18:32,106 - INFO - Invalid login test passed
+2026-05-11 11:18:35,967 - INFO - Starting invalid login test
+2026-05-11 11:18:35,968 - INFO - trying login with username: 
+2026-05-11 11:18:35,968 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-11 11:18:36,035 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:18:36,100 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:18:36,171 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 11:18:36,193 - INFO - Invalid login test passed
+2026-05-11 11:18:40,048 - INFO - Starting invalid login test
+2026-05-11 11:18:40,049 - INFO - trying login with username: standard_user
+2026-05-11 11:18:40,049 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:18:40,137 - INFO - Typing '' into element: ('id', 'password')
+2026-05-11 11:18:40,178 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 11:18:40,247 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 11:18:40,270 - INFO - Invalid login test passed
+2026-05-11 11:18:44,206 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 11:18:44,278 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 11:18:44,326 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:09:50,860 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:09:50,941 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:09:50,992 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:09:51,090 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:09:51,150 - INFO - Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-11 12:09:55,193 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:09:55,280 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:09:55,331 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:09:55,432 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:09:55,524 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 12:09:55,596 - INFO - Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-11 12:09:59,678 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:09:59,752 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:09:59,804 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:09:59,907 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:10:00,006 - INFO - Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-11 12:10:00,066 - INFO - Clicking element: ('id', 'reset_sidebar_link')
+2026-05-11 12:10:04,552 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:10:04,649 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:10:04,737 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:10:04,844 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:10:04,917 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 12:10:04,989 - INFO - Clicking element: ('id', 'checkout')
+2026-05-11 12:10:05,053 - INFO - Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-11 12:10:05,118 - INFO - Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-11 12:10:05,167 - INFO - Clicking element: ('id', 'continue')
+2026-05-11 12:10:05,278 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:10:16,692 - INFO - Starting invalid login test
+2026-05-11 12:10:16,692 - INFO - trying login with username: wrong_user
+2026-05-11 12:10:16,693 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-11 12:10:16,772 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-11 12:10:16,821 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:10:16,905 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:10:16,929 - INFO - Invalid login test passed
+2026-05-11 12:10:20,920 - INFO - Starting invalid login test
+2026-05-11 12:10:20,921 - INFO - trying login with username: 
+2026-05-11 12:10:20,921 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-11 12:10:20,980 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:10:21,033 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:10:21,126 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:10:21,166 - INFO - Invalid login test passed
+2026-05-11 12:10:25,111 - INFO - Starting invalid login test
+2026-05-11 12:10:25,112 - INFO - trying login with username: standard_user
+2026-05-11 12:10:25,112 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:10:25,189 - INFO - Typing '' into element: ('id', 'password')
+2026-05-11 12:10:25,229 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:10:25,299 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:10:25,325 - INFO - Invalid login test passed
+2026-05-11 12:10:29,235 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:10:29,314 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:10:29,370 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:40:47,625 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:40:47,721 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:40:47,771 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:40:47,873 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:40:47,935 - INFO - Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-11 12:40:52,003 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:40:52,083 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:40:52,134 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:40:52,237 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:40:52,317 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 12:40:52,382 - INFO - Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-11 12:40:56,351 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:40:56,434 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:40:56,492 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:40:56,587 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:40:56,657 - INFO - Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-11 12:40:56,714 - INFO - Clicking element: ('id', 'reset_sidebar_link')
+2026-05-11 12:41:01,354 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:41:01,439 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:41:01,502 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:41:01,631 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:41:01,717 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 12:41:01,790 - INFO - Clicking element: ('id', 'checkout')
+2026-05-11 12:41:01,871 - INFO - Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-11 12:41:01,946 - INFO - Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-11 12:41:02,002 - INFO - Clicking element: ('id', 'continue')
+2026-05-11 12:41:02,064 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:41:13,220 - INFO - Starting invalid login test
+2026-05-11 12:41:13,221 - INFO - trying login with username: wrong_user
+2026-05-11 12:41:13,221 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-11 12:41:13,297 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-11 12:41:13,352 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:41:13,433 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:41:13,464 - INFO - Invalid login test passed
+2026-05-11 12:41:17,331 - INFO - Starting invalid login test
+2026-05-11 12:41:17,332 - INFO - trying login with username: 
+2026-05-11 12:41:17,332 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-11 12:41:17,391 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:41:17,451 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:41:17,522 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:41:17,547 - INFO - Invalid login test passed
+2026-05-11 12:41:21,539 - INFO - Starting invalid login test
+2026-05-11 12:41:21,540 - INFO - trying login with username: standard_user
+2026-05-11 12:41:21,540 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:41:21,615 - INFO - Typing '' into element: ('id', 'password')
+2026-05-11 12:41:21,656 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:41:21,729 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:41:21,755 - INFO - Invalid login test passed
+2026-05-11 12:41:25,722 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:41:25,809 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:41:25,870 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:47:19,296 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:47:19,387 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:47:19,446 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:47:19,556 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:47:19,631 - INFO - Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-11 12:47:23,730 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:47:23,805 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:47:23,851 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:47:23,961 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:47:24,043 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 12:47:24,108 - INFO - Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-11 12:47:28,137 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:47:28,215 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:47:28,269 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:47:28,372 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:47:28,459 - INFO - Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-11 12:47:28,512 - INFO - Clicking element: ('id', 'reset_sidebar_link')
+2026-05-11 12:47:32,957 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:47:33,036 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:47:33,089 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:47:33,186 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:47:33,256 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 12:47:33,324 - INFO - Clicking element: ('id', 'checkout')
+2026-05-11 12:47:33,380 - INFO - Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-11 12:47:33,439 - INFO - Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-11 12:47:33,489 - INFO - Clicking element: ('id', 'continue')
+2026-05-11 12:47:33,548 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:47:44,598 - INFO - Starting invalid login test
+2026-05-11 12:47:44,598 - INFO - trying login with username: wrong_user
+2026-05-11 12:47:44,598 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-11 12:47:44,673 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-11 12:47:44,723 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:47:44,798 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:47:44,823 - INFO - Invalid login test passed
+2026-05-11 12:47:48,757 - INFO - Starting invalid login test
+2026-05-11 12:47:48,758 - INFO - trying login with username: 
+2026-05-11 12:47:48,758 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-11 12:47:48,815 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:47:48,870 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:47:48,943 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:47:48,967 - INFO - Invalid login test passed
+2026-05-11 12:47:52,941 - INFO - Starting invalid login test
+2026-05-11 12:47:52,942 - INFO - trying login with username: standard_user
+2026-05-11 12:47:52,942 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:47:53,019 - INFO - Typing '' into element: ('id', 'password')
+2026-05-11 12:47:53,053 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:47:53,126 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:47:53,161 - INFO - Invalid login test passed
+2026-05-11 12:47:57,072 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:47:57,150 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:47:57,201 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:53:06,199 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:53:06,276 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:53:06,320 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:53:06,420 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:53:06,479 - INFO - Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-11 12:53:10,619 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:53:10,695 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:53:10,741 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:53:10,844 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:53:10,910 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 12:53:10,974 - INFO - Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-11 12:53:15,017 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:53:15,094 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:53:15,143 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:53:15,237 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:53:15,336 - INFO - Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-11 12:53:15,405 - INFO - Clicking element: ('id', 'reset_sidebar_link')
+2026-05-11 12:53:19,914 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:53:19,990 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:53:20,038 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:53:20,133 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-11 12:53:20,203 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-11 12:53:20,265 - INFO - Clicking element: ('id', 'checkout')
+2026-05-11 12:53:20,319 - INFO - Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-11 12:53:20,372 - INFO - Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-11 12:53:20,425 - INFO - Clicking element: ('id', 'continue')
+2026-05-11 12:53:20,504 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:53:31,468 - INFO - Starting invalid login test
+2026-05-11 12:53:31,469 - INFO - trying login with username: wrong_user
+2026-05-11 12:53:31,469 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-11 12:53:31,542 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-11 12:53:31,590 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:53:31,662 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:53:31,685 - INFO - Invalid login test passed
+2026-05-11 12:53:35,641 - INFO - Starting invalid login test
+2026-05-11 12:53:35,642 - INFO - trying login with username: 
+2026-05-11 12:53:35,642 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-11 12:53:35,699 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:53:35,752 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:53:35,821 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:53:35,848 - INFO - Invalid login test passed
+2026-05-11 12:53:39,750 - INFO - Starting invalid login test
+2026-05-11 12:53:39,751 - INFO - trying login with username: standard_user
+2026-05-11 12:53:39,751 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:53:39,836 - INFO - Typing '' into element: ('id', 'password')
+2026-05-11 12:53:39,874 - INFO - Clicking element: ('id', 'login-button')
+2026-05-11 12:53:39,941 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-11 12:53:39,964 - INFO - Invalid login test passed
+2026-05-11 12:53:43,951 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-11 12:53:44,022 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-11 12:53:44,069 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:22:19,463 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:22:19,826 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:22:19,894 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:22:20,021 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:22:20,097 - INFO - Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-12 09:22:24,581 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:22:24,908 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:22:24,974 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:22:25,200 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:22:25,290 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 09:22:25,355 - INFO - Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-12 09:22:29,578 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:22:29,716 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:22:29,812 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:22:29,933 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:22:30,012 - INFO - Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-12 09:22:30,076 - INFO - Clicking element: ('id', 'reset_sidebar_link')
+2026-05-12 09:22:34,761 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:22:34,894 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:22:34,968 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:22:35,078 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:22:35,159 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 09:22:35,229 - INFO - Clicking element: ('id', 'checkout')
+2026-05-12 09:22:35,292 - INFO - Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-12 09:22:35,355 - INFO - Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-12 09:22:35,413 - INFO - Clicking element: ('id', 'continue')
+2026-05-12 09:22:35,473 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:22:39,418 - INFO - Starting invalid login test
+2026-05-12 09:22:39,419 - INFO - trying login with username: wrong_user
+2026-05-12 09:22:39,419 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-12 09:22:39,534 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-12 09:22:39,606 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:22:39,698 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:22:39,724 - INFO - Invalid login test passed
+2026-05-12 09:22:44,112 - INFO - Starting invalid login test
+2026-05-12 09:22:44,112 - INFO - trying login with username: 
+2026-05-12 09:22:44,112 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-12 09:22:44,197 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:22:44,279 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:22:44,366 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:22:44,392 - INFO - Invalid login test passed
+2026-05-12 09:22:48,767 - INFO - Starting invalid login test
+2026-05-12 09:22:48,767 - INFO - trying login with username: standard_user
+2026-05-12 09:22:48,768 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:22:48,976 - INFO - Typing '' into element: ('id', 'password')
+2026-05-12 09:22:49,039 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:22:49,114 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:22:49,151 - INFO - Invalid login test passed
+2026-05-12 09:22:53,721 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:22:53,889 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:22:53,981 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:29:57,946 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:29:58,059 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:29:58,132 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:29:58,240 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:29:58,314 - INFO - Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-12 09:30:02,296 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:30:02,398 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:30:02,469 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:30:02,584 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:30:02,669 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 09:30:02,735 - INFO - Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-12 09:30:06,764 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:30:06,868 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:30:06,934 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:30:07,046 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:30:07,124 - INFO - Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-12 09:30:07,181 - INFO - Clicking element: ('id', 'reset_sidebar_link')
+2026-05-12 09:30:11,902 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:30:12,000 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:30:12,066 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:30:12,183 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:30:12,262 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 09:30:12,329 - INFO - Clicking element: ('id', 'checkout')
+2026-05-12 09:30:12,383 - INFO - Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-12 09:30:12,444 - INFO - Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-12 09:30:12,502 - INFO - Clicking element: ('id', 'continue')
+2026-05-12 09:30:12,560 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:30:23,974 - INFO - Starting invalid login test
+2026-05-12 09:30:23,974 - INFO - trying login with username: wrong_user
+2026-05-12 09:30:23,974 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-12 09:30:24,072 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-12 09:30:24,132 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:30:24,222 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:30:24,249 - INFO - Invalid login test passed
+2026-05-12 09:30:28,511 - INFO - Starting invalid login test
+2026-05-12 09:30:28,511 - INFO - trying login with username: 
+2026-05-12 09:30:28,511 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-12 09:30:28,586 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:30:28,658 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:30:28,744 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:30:28,772 - INFO - Invalid login test passed
+2026-05-12 09:30:32,861 - INFO - Starting invalid login test
+2026-05-12 09:30:32,861 - INFO - trying login with username: standard_user
+2026-05-12 09:30:32,862 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:30:32,960 - INFO - Typing '' into element: ('id', 'password')
+2026-05-12 09:30:33,015 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:30:33,092 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:30:33,129 - INFO - Invalid login test passed
+2026-05-12 09:30:37,402 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:30:37,496 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:30:37,568 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:47:22,003 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:47:22,106 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:47:22,189 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:47:22,333 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:47:22,399 - INFO - Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-12 09:47:26,596 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:47:26,712 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:47:26,793 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:47:26,901 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:47:26,972 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 09:47:27,034 - INFO - Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-12 09:47:31,181 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:47:31,283 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:47:31,354 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:47:31,465 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:47:31,547 - INFO - Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-12 09:47:31,602 - INFO - Clicking element: ('id', 'reset_sidebar_link')
+2026-05-12 09:47:36,214 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:47:36,315 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:47:36,394 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:47:36,516 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:47:36,595 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 09:47:36,656 - INFO - Clicking element: ('id', 'checkout')
+2026-05-12 09:47:36,713 - INFO - Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-12 09:47:36,771 - INFO - Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-12 09:47:36,819 - INFO - Clicking element: ('id', 'continue')
+2026-05-12 09:47:36,876 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:47:48,233 - INFO - Starting invalid login test
+2026-05-12 09:47:48,233 - INFO - trying login with username: wrong_user
+2026-05-12 09:47:48,233 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-12 09:47:48,332 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-12 09:47:48,403 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:47:48,492 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:47:48,519 - INFO - Invalid login test passed
+2026-05-12 09:47:52,809 - INFO - Starting invalid login test
+2026-05-12 09:47:52,809 - INFO - trying login with username: 
+2026-05-12 09:47:52,810 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-12 09:47:52,899 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:47:52,978 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:47:53,060 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:47:53,085 - INFO - Invalid login test passed
+2026-05-12 09:47:57,247 - INFO - Starting invalid login test
+2026-05-12 09:47:57,247 - INFO - trying login with username: standard_user
+2026-05-12 09:47:57,247 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:47:57,355 - INFO - Typing '' into element: ('id', 'password')
+2026-05-12 09:47:57,408 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:47:57,489 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:47:57,518 - INFO - Invalid login test passed
+2026-05-12 09:48:01,717 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:48:01,849 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:48:01,918 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:56:02,981 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:56:03,096 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:56:03,168 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:56:03,291 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:56:03,370 - INFO - Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-12 09:56:07,494 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:56:07,607 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:56:07,686 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:56:07,804 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:56:07,880 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 09:56:07,950 - INFO - Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-12 09:56:12,027 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:56:12,132 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:56:12,208 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:56:12,326 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:56:12,401 - INFO - Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-12 09:56:12,460 - INFO - Clicking element: ('id', 'reset_sidebar_link')
+2026-05-12 09:56:17,057 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:56:17,162 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:56:17,235 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:56:17,352 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 09:56:17,443 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 09:56:17,517 - INFO - Clicking element: ('id', 'checkout')
+2026-05-12 09:56:17,575 - INFO - Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-12 09:56:17,634 - INFO - Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-12 09:56:17,685 - INFO - Clicking element: ('id', 'continue')
+2026-05-12 09:56:17,744 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:56:29,016 - INFO - Starting invalid login test
+2026-05-12 09:56:29,016 - INFO - trying login with username: wrong_user
+2026-05-12 09:56:29,016 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-12 09:56:29,130 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-12 09:56:29,206 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:56:29,293 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:56:29,317 - INFO - Invalid login test passed
+2026-05-12 09:56:33,601 - INFO - Starting invalid login test
+2026-05-12 09:56:33,601 - INFO - trying login with username: 
+2026-05-12 09:56:33,601 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-12 09:56:33,680 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:56:33,787 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:56:33,870 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:56:33,896 - INFO - Invalid login test passed
+2026-05-12 09:56:38,058 - INFO - Starting invalid login test
+2026-05-12 09:56:38,058 - INFO - trying login with username: standard_user
+2026-05-12 09:56:38,058 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:56:38,166 - INFO - Typing '' into element: ('id', 'password')
+2026-05-12 09:56:38,219 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 09:56:38,301 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 09:56:38,331 - INFO - Invalid login test passed
+2026-05-12 09:56:42,465 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 09:56:42,571 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 09:56:42,656 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 10:01:55,761 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:01:55,913 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:01:56,003 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 10:01:56,110 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 10:01:56,174 - INFO - Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-12 10:02:00,441 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:02:00,554 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:02:00,638 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 10:02:00,773 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 10:02:00,867 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 10:02:00,940 - INFO - Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-12 10:02:05,008 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:02:05,124 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:02:05,212 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 10:02:05,327 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 10:02:05,422 - INFO - Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-12 10:02:05,479 - INFO - Clicking element: ('id', 'reset_sidebar_link')
+2026-05-12 10:02:10,092 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:02:10,232 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:02:10,309 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 10:02:10,411 - INFO - Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 10:02:10,490 - INFO - Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 10:02:10,558 - INFO - Clicking element: ('id', 'checkout')
+2026-05-12 10:02:10,633 - INFO - Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-12 10:02:10,701 - INFO - Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-12 10:02:10,762 - INFO - Clicking element: ('id', 'continue')
+2026-05-12 10:02:10,823 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 10:02:22,285 - INFO - Starting invalid login test
+2026-05-12 10:02:22,285 - INFO - trying login with username: wrong_user
+2026-05-12 10:02:22,285 - INFO - Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-12 10:02:22,419 - INFO - Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-12 10:02:22,489 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 10:02:22,575 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 10:02:22,600 - INFO - Invalid login test passed
+2026-05-12 10:02:26,907 - INFO - Starting invalid login test
+2026-05-12 10:02:26,908 - INFO - trying login with username: 
+2026-05-12 10:02:26,908 - INFO - Typing '' into element: ('id', 'user-name')
+2026-05-12 10:02:27,008 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:02:27,099 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 10:02:27,183 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 10:02:27,209 - INFO - Invalid login test passed
+2026-05-12 10:02:31,323 - INFO - Starting invalid login test
+2026-05-12 10:02:31,324 - INFO - trying login with username: standard_user
+2026-05-12 10:02:31,324 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:02:31,479 - INFO - Typing '' into element: ('id', 'password')
+2026-05-12 10:02:31,546 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 10:02:31,627 - INFO - Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 10:02:31,653 - INFO - Invalid login test passed
+2026-05-12 10:02:35,836 - INFO - Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:02:35,971 - INFO - Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:02:36,041 - INFO - Clicking element: ('id', 'login-button')
+2026-05-12 10:19:44,029 | INFO | saucedemo | Starting invalid login test
+2026-05-12 10:19:44,033 | INFO | saucedemo | trying login with username: wrong_user
+2026-05-12 10:19:44,034 | INFO | saucedemo | Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-12 10:19:44,150 | INFO | saucedemo | Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-12 10:19:44,219 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:19:44,296 | INFO | saucedemo | Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 10:19:44,321 | INFO | saucedemo | Invalid login test passed
+2026-05-12 10:19:48,688 | INFO | saucedemo | Starting invalid login test
+2026-05-12 10:19:48,688 | INFO | saucedemo | trying login with username: 
+2026-05-12 10:19:48,688 | INFO | saucedemo | Typing '' into element: ('id', 'user-name')
+2026-05-12 10:19:48,783 | INFO | saucedemo | Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:19:48,857 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:19:48,944 | INFO | saucedemo | Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 10:19:48,969 | INFO | saucedemo | Invalid login test passed
+2026-05-12 10:19:53,221 | INFO | saucedemo | Starting invalid login test
+2026-05-12 10:19:53,222 | INFO | saucedemo | trying login with username: standard_user
+2026-05-12 10:19:53,222 | INFO | saucedemo | Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:19:53,321 | INFO | saucedemo | Typing '' into element: ('id', 'password')
+2026-05-12 10:19:53,387 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:19:53,481 | INFO | saucedemo | Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 10:19:53,506 | INFO | saucedemo | Invalid login test passed
+2026-05-12 10:19:57,739 | INFO | saucedemo | Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:19:57,836 | INFO | saucedemo | Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:19:57,929 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:31:33,502 | INFO | saucedemo | Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:31:33,623 | INFO | saucedemo | Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:31:33,699 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:31:33,825 | INFO | saucedemo | Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 10:31:33,906 | INFO | saucedemo | Getting  text from element : ('class name', 'shopping_cart_badge')
+2026-05-12 10:31:38,030 | INFO | saucedemo | Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:31:38,190 | INFO | saucedemo | Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:31:38,267 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:31:38,374 | INFO | saucedemo | Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 10:31:38,455 | INFO | saucedemo | Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 10:31:38,520 | INFO | saucedemo | Clicking element: ('id', 'remove-sauce-labs-fleece-jacket')
+2026-05-12 10:31:42,657 | INFO | saucedemo | Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:31:42,802 | INFO | saucedemo | Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:31:42,880 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:31:42,992 | INFO | saucedemo | Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 10:31:43,072 | INFO | saucedemo | Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-12 10:31:43,140 | INFO | saucedemo | Clicking element: ('id', 'reset_sidebar_link')
+2026-05-12 10:31:47,758 | INFO | saucedemo | Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:31:47,875 | INFO | saucedemo | Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:31:47,958 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:31:48,083 | INFO | saucedemo | Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 10:31:48,167 | INFO | saucedemo | Clicking element: ('class name', 'shopping_cart_link')
+2026-05-12 10:31:48,241 | INFO | saucedemo | Clicking element: ('id', 'checkout')
+2026-05-12 10:31:48,312 | INFO | saucedemo | Typing 'Khayyam' into element: ('id', 'first-name')
+2026-05-12 10:31:48,383 | INFO | saucedemo | Typing 'Khalilov' into element: ('id', 'last-name')
+2026-05-12 10:31:48,457 | INFO | saucedemo | Clicking element: ('id', 'continue')
+2026-05-12 10:31:48,548 | INFO | saucedemo | Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 10:32:00,354 | INFO | saucedemo | Starting invalid login test
+2026-05-12 10:32:00,355 | INFO | saucedemo | trying login with username: wrong_user
+2026-05-12 10:32:00,355 | INFO | saucedemo | Typing 'wrong_user' into element: ('id', 'user-name')
+2026-05-12 10:32:00,481 | INFO | saucedemo | Typing 'wrong_pass' into element: ('id', 'password')
+2026-05-12 10:32:00,557 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:32:00,647 | INFO | saucedemo | Getting  text from element : ('css selector', "h3[data-test='error']")
+2026-05-12 10:32:00,676 | INFO | saucedemo | Invalid login test passed

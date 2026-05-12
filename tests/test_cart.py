@@ -1,10 +1,13 @@
 import pytest
 from pages.cart_page import CartPage
 from utils.constants import *
+import allure
 
 @pytest.mark.cart
 @pytest.mark.regression
 @pytest.mark.all
+@allure.parent_suite("SauceDemo")
+@allure.suite("Cart Tests")
 
 def test_add_product_to_cart(logged_in_inventory):
  

@@ -10,16 +10,28 @@ def get_logger():
 
     logger.setLevel(logging.INFO)
 
-    if not logger.handlers:
+    # Aynı handler tekrar eklenmesin
+    if logger.hasHandlers():
+        logger.handlers.clear()
 
-        file_handler = logging.FileHandler("logs/test.log")
+    # FILE HANDLER
+    file_handler = logging.FileHandler(
+        "logs/test.log",
+        encoding="utf-8"
+    )
 
-        formatter = logging.Formatter(
-            "%(asctime)s - %(levelname)s - %(message)s"
-        )
+    # CONSOLE HANDLER
+    console_handler = logging.StreamHandler()
 
-        file_handler.setFormatter(formatter)
+    # FORMAT
+    formatter = logging.Formatter(
+        "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+    )
 
-        logger.addHandler(file_handler)
+    file_handler.setFormatter(formatter)
+    console_handler.setFormatter(formatter)
+
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
 
     return logger

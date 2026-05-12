@@ -1,0 +1,6 @@
+2026-05-12 10:31:42,657 | INFO | saucedemo | Typing 'standard_user' into element: ('id', 'user-name')
+2026-05-12 10:31:42,802 | INFO | saucedemo | Typing 'secret_sauce' into element: ('id', 'password')
+2026-05-12 10:31:42,880 | INFO | saucedemo | Clicking element: ('id', 'login-button')
+2026-05-12 10:31:42,992 | INFO | saucedemo | Clicking element: ('id', 'add-to-cart-sauce-labs-fleece-jacket')
+2026-05-12 10:31:43,072 | INFO | saucedemo | Clicking element: ('id', 'react-burger-menu-btn')
+2026-05-12 10:31:43,140 | INFO | saucedemo | Clicking element: ('id', 'reset_sidebar_link')
