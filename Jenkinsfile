@@ -4,12 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/mrkhayyamm/sauce-demo-test-automation.git'
-            }
-        }
-
         stage('Setup Python Environment') {
             steps {
                 bat '"C:\\Users\\LongStay\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" -m venv venv'
