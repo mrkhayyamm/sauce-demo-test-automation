@@ -5,7 +5,7 @@ from utils.constants import *
 from utils.logger import get_logger
 import allure
  
-  
+   
 logger = get_logger()
 
 @allure.parent_suite("SauceDemo")
