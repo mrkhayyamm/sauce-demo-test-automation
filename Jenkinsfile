@@ -2,30 +2,46 @@ pipeline {
 
     agent any
 
-    stages {
+    parameters {
+        choice(
+            name: 'TEST_TYPE',
+            choices: ['smoke', 'regression', 'login', 'cart'],
+            description: 'Select test type to run'
+        )
+    }
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/mrkhayyamm/sauce-demo-test-automation.git'
-            }
-        }
+    stages {
 
         stage('Setup Python Environment') {
             steps {
+
                 bat '"C:\\Users\\LongStay\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" -m venv venv'
+
                 bat 'call venv\\Scripts\\activate && python -m pip install --upgrade pip'
             }
         }
 
         stage('Install Dependencies') {
             steps {
+
                 bat 'call venv\\Scripts\\activate && pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
-                bat 'call venv\\Scripts\\activate && pytest --alluredir=allure-results'
+
+                script {
+
+                    if (params.TEST_SUITE == 'all') {
+
+                        bat "call venv\\Scripts\\activate && pytest -m ${params.TEST_TYPE} --alluredir=allure-results"
+
+                    } else {
+
+                        bat "call venv\\Scripts\\activate && pytest -m ${params.TEST_SUITE} --alluredir=allure-results"
+                    }
+                }
             }
         }
     }
