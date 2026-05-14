@@ -3,6 +3,7 @@ pipeline {
     agent any
 
     parameters {
+
         choice(
             name: 'TEST_TYPE',
             choices: ['smoke', 'regression', 'login', 'cart'],
@@ -13,6 +14,7 @@ pipeline {
     stages {
 
         stage('Setup Python Environment') {
+
             steps {
 
                 bat '"C:\\Users\\LongStay\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" -m venv venv'
@@ -22,6 +24,7 @@ pipeline {
         }
 
         stage('Install Dependencies') {
+
             steps {
 
                 bat 'call venv\\Scripts\\activate && pip install -r requirements.txt'
@@ -29,19 +32,10 @@ pipeline {
         }
 
         stage('Run Tests') {
+
             steps {
 
-                script {
-
-                    if (params.TEST_SUITE == 'all') {
-
-                        bat "call venv\\Scripts\\activate && pytest -m ${params.TEST_TYPE} --alluredir=allure-results"
-
-                    } else {
-
-                        bat "call venv\\Scripts\\activate && pytest -m ${params.TEST_SUITE} --alluredir=allure-results"
-                    }
-                }
+                bat "call venv\\Scripts\\activate && pytest -m ${params.TEST_TYPE} --alluredir=allure-results"
             }
         }
     }
