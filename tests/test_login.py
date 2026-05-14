@@ -13,7 +13,6 @@ logger = get_logger()
 @pytest.mark.regression
 @pytest.mark.login
 @pytest.mark.negative
-@pytest.mark.all
 @allure.feature("Login")
 @allure.story("Invalid Login")
 @allure.severity(allure.severity_level.CRITICAL)
@@ -55,7 +54,6 @@ def test_invalid_login(driver,test_data):
 )
 @pytest.mark.smoke
 @pytest.mark.login
-@pytest.mark.all
 @allure.feature("Login")
 @allure.story("Successful Login")
 @allure.severity(allure.severity_level.BLOCKER)
