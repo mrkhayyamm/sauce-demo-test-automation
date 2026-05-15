@@ -16,13 +16,37 @@ timestamp = int(time.time())
 username = "standard_user"
 password = "secret_sauce"
 
+
+
+
+
+
+
+
+
+
+
 @pytest.fixture(scope="function")
 def driver():
     options = Options()
-    options.add_argument("--incognito")  # Gizli modda aç
 
+    # Browser settings
+    options.add_argument("--incognito")
+
+    # Headless mode
     if HEADLESS:
         options.add_argument("--headless=new")
+
+    # CI/CD stability
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-gpu")
+
+    # Faster execution
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-infobars")
+    options.add_argument("--disable-notifications")
 
 
     if BROWSER =="chrome":
@@ -33,10 +57,26 @@ def driver():
     
 
     driver.get(BASE_URL)
-    driver.maximize_window()
+ 
 
     yield driver
     driver.quit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @pytest.fixture()
