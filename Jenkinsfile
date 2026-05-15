@@ -9,7 +9,7 @@ pipeline {
             description: 'Select test type to run'
         )
     }
-
+  
     stages {
 
         stage('Setup Python Environment') {
