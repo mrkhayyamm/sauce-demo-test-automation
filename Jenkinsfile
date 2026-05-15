@@ -1,7 +1,7 @@
 pipeline {
 
     agent any
-
+ 
     parameters {
         choice(
             name: 'TEST_TYPE',
