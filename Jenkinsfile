@@ -31,17 +31,7 @@ pipeline {
         stage('Run Tests') {
             steps {
 
-                script {
-
-                    if (params.TEST_SUITE == 'all') {
-
-                        bat "call venv\\Scripts\\activate && pytest -m ${params.TEST_TYPE} --alluredir=allure-results"
-
-                    } else {
-
-                        bat "call venv\\Scripts\\activate && pytest -m ${params.TEST_SUITE} --alluredir=allure-results"
-                    }
-                }
+                bat "call venv\\Scripts\\activate && pytest -m ${params.TEST_TYPE} --alluredir=allure-results"
             }
         }
     }
