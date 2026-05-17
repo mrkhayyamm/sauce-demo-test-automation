@@ -4,4 +4,4 @@ BROWSER = "chrome"
 
 HEADLESS = True
 
-TIMEOUT = 10
+TIMEOUT = 10   
