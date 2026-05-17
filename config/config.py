@@ -2,6 +2,6 @@ BASE_URL = "https://www.saucedemo.com/"
 
 BROWSER = "chrome"
 
-HEADLESS = True
+HEADLESS = False
 
 TIMEOUT = 10   
