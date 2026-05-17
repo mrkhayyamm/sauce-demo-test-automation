@@ -2,7 +2,7 @@ import requests
 import pytest
 
 @pytest.mark.api
-
+@pytest.mark.smoke
 def test_get_users():
     response=requests.get(
 
